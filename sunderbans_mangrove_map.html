@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_063bf96468e892b537d2bd886bfdccd0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_063bf96468e892b537d2bd886bfdccd0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_063bf96468e892b537d2bd886bfdccd0 = L.map(
+                "map_063bf96468e892b537d2bd886bfdccd0",
+                {
+                    center: [21.7331876, 88.8689661],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d60baedd902edb22112ad04eff1bc556 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d60baedd902edb22112ad04eff1bc556.addTo(map_063bf96468e892b537d2bd886bfdccd0);
+        
+    
+            var feature_group_64ec0b6db2c5a2df90e58e9bdb35ce72 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_4e91cd95dfff9887343de01f57e532be = L.marker(
+                [21.73, 88.58],
+                {
+}
+            ).addTo(feature_group_64ec0b6db2c5a2df90e58e9bdb35ce72);
+        
+    
+            var icon_63d5b204a2be582ae6d1502b551f4f5a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_4e91cd95dfff9887343de01f57e532be.bindTooltip(
+                `<div>
+                     Mangrove Location
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4e91cd95dfff9887343de01f57e532be.setIcon(icon_63d5b204a2be582ae6d1502b551f4f5a);
+            
+    
+            var marker_7bb9d9e8e5446142e42aed98f856464c = L.marker(
+                [21.78, 88.62],
+                {
+}
+            ).addTo(feature_group_64ec0b6db2c5a2df90e58e9bdb35ce72);
+        
+    
+            var icon_6b1fd78a628991eafe34dcadc20625aa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_7bb9d9e8e5446142e42aed98f856464c.bindTooltip(
+                `<div>
+                     Mangrove Location
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7bb9d9e8e5446142e42aed98f856464c.setIcon(icon_6b1fd78a628991eafe34dcadc20625aa);
+            
+    
+            var marker_bca67fb0c217b09bfc577d2d58c14310 = L.marker(
+                [21.84, 88.94],
+                {
+}
+            ).addTo(feature_group_64ec0b6db2c5a2df90e58e9bdb35ce72);
+        
+    
+            var icon_52805a174b85cae724ebaa737720c0be = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_bca67fb0c217b09bfc577d2d58c14310.bindTooltip(
+                `<div>
+                     Mangrove Location
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bca67fb0c217b09bfc577d2d58c14310.setIcon(icon_52805a174b85cae724ebaa737720c0be);
+            
+    
+            var marker_2ce06e3dd0c10d9d810011b573c5cf87 = L.marker(
+                [21.68, 88.8],
+                {
+}
+            ).addTo(feature_group_64ec0b6db2c5a2df90e58e9bdb35ce72);
+        
+    
+            var icon_1e026e939729e1c81718d2e7e4260230 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_2ce06e3dd0c10d9d810011b573c5cf87.bindTooltip(
+                `<div>
+                     Mangrove Location
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2ce06e3dd0c10d9d810011b573c5cf87.setIcon(icon_1e026e939729e1c81718d2e7e4260230);
+            
+    
+            var marker_e79a3602bbe8becc1dccbe9bff1f93f6 = L.marker(
+                [21.65, 88.38],
+                {
+}
+            ).addTo(feature_group_64ec0b6db2c5a2df90e58e9bdb35ce72);
+        
+    
+            var icon_9ae02ae61ecbcb7748d8764653d75ea9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_e79a3602bbe8becc1dccbe9bff1f93f6.bindTooltip(
+                `<div>
+                     Mangrove Location
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e79a3602bbe8becc1dccbe9bff1f93f6.setIcon(icon_9ae02ae61ecbcb7748d8764653d75ea9);
+            
+    
+            var marker_fd7cfcfe861847ab67957cc7be9ef924 = L.marker(
+                [21.9, 88.85],
+                {
+}
+            ).addTo(feature_group_64ec0b6db2c5a2df90e58e9bdb35ce72);
+        
+    
+            var icon_3690433491a6a815cdf3144b4503bfc6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_fd7cfcfe861847ab67957cc7be9ef924.bindTooltip(
+                `<div>
+                     Mangrove Location
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fd7cfcfe861847ab67957cc7be9ef924.setIcon(icon_3690433491a6a815cdf3144b4503bfc6);
+            
+    
+            var marker_f37c031000862e00bef4ac8badabe58c = L.marker(
+                [21.79, 88.42],
+                {
+}
+            ).addTo(feature_group_64ec0b6db2c5a2df90e58e9bdb35ce72);
+        
+    
+            var icon_dfe5d9a01d649909f2e28f59bb623e74 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_f37c031000862e00bef4ac8badabe58c.bindTooltip(
+                `<div>
+                     Mangrove Location
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f37c031000862e00bef4ac8badabe58c.setIcon(icon_dfe5d9a01d649909f2e28f59bb623e74);
+            
+    
+            var marker_f32982d7059fa3f17f57f5bf22fcb9df = L.marker(
+                [21.71, 88.69],
+                {
+}
+            ).addTo(feature_group_64ec0b6db2c5a2df90e58e9bdb35ce72);
+        
+    
+            var icon_e07595fe02bd24bb808074a4d8899d21 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_f32982d7059fa3f17f57f5bf22fcb9df.bindTooltip(
+                `<div>
+                     Mangrove Location
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f32982d7059fa3f17f57f5bf22fcb9df.setIcon(icon_e07595fe02bd24bb808074a4d8899d21);
+            
+    
+            var marker_c03692020a9011e05261e1e0c3828c48 = L.marker(
+                [22.02, 88.8],
+                {
+}
+            ).addTo(feature_group_64ec0b6db2c5a2df90e58e9bdb35ce72);
+        
+    
+            var icon_67f5efa738ee562a60ea681ef9fe9a67 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_c03692020a9011e05261e1e0c3828c48.bindTooltip(
+                `<div>
+                     Mangrove Location
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c03692020a9011e05261e1e0c3828c48.setIcon(icon_67f5efa738ee562a60ea681ef9fe9a67);
+            
+    
+            var marker_7cd0b4137b1017b14c2a35a948fdb0bf = L.marker(
+                [22.09, 88.75],
+                {
+}
+            ).addTo(feature_group_64ec0b6db2c5a2df90e58e9bdb35ce72);
+        
+    
+            var icon_457d7f5b8351bbb91fe3eaa804e44e0a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_7cd0b4137b1017b14c2a35a948fdb0bf.bindTooltip(
+                `<div>
+                     Mangrove Location
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7cd0b4137b1017b14c2a35a948fdb0bf.setIcon(icon_457d7f5b8351bbb91fe3eaa804e44e0a);
+            
+    
+            feature_group_64ec0b6db2c5a2df90e58e9bdb35ce72.addTo(map_063bf96468e892b537d2bd886bfdccd0);
+        
+    
+            var layer_control_bd7ef04a5168954488478a196dafdb70_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_d60baedd902edb22112ad04eff1bc556,
+                },
+                overlays :  {
+                    "Mangrove Locations" : feature_group_64ec0b6db2c5a2df90e58e9bdb35ce72,
+                },
+            };
+            let layer_control_bd7ef04a5168954488478a196dafdb70 = L.control.layers(
+                layer_control_bd7ef04a5168954488478a196dafdb70_layers.base_layers,
+                layer_control_bd7ef04a5168954488478a196dafdb70_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_063bf96468e892b537d2bd886bfdccd0);
+
+        
+</script>
+</html>
